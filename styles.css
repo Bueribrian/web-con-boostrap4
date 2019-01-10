@@ -1,0 +1,17 @@
+body{
+    box-sizing: border-box;
+    padding: 3rem 5rem;
+    background: #f1f1f1;
+}
+.jum-header{
+    border-radius: 15px;
+    height: 100vh;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+.jum-header .container{
+    background:rgba(22, 22, 22,0.8)
+}
