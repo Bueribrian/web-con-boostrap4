@@ -100,7 +100,11 @@ body{
     border-radius: 15px;
     height: 100vh;
     padding: 0;
-    background-image: url('https://images.pexels.com/photos/983200/pexels-photo-983200.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background: #870000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     background-size: cover;
     overflow: hidden;
 }
@@ -115,31 +119,34 @@ body{
 -moz-box-shadow: 12px 13px 0px 1px white;
 box-shadow: 12px 13px 0px 1px white;
 }
-
+.navbar-item-link:hover{
+    color: white !important;
+    transition: .2s all;
+}
 
 .navbar{
-    transition: .1s ease !important;
     top:0;
     left: 0;
     width: 100%;
     
 }
 .nav-link{
-    font-size: .9rem;
+    color: #FF345E !important;
+    font-size:1.2rem;
     font-weight:bolder;
     letter-spacing:1px;
     background: transparent !important;
-
+    font-family: 'Staatliches', sans-serif;
 }
 .nav-list-header{
-    background:rgba(0, 0, 0, 0);
+    background: #03030300 !important;
     list-style: none;
 }
 .nav-item{
     background: transparent !important;
 }
 .bg-nb-black{
-    background: #000000ea !important;
+    background: #000000 !important;
 }
 .logo{
     width: 250px;
@@ -175,7 +182,7 @@ box-shadow: 12px 13px 0px 1px white;
        
     }
     .nav-list-header{
-        background: #000000ea !important;
+        background: #1f1f1f !important;
     }
 }
 @media screen and (max-width: 480px){
