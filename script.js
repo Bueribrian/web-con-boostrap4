@@ -5,7 +5,7 @@ window.onload = ()=>{
 const navbar = document.querySelector('.navbar')
 window.addEventListener('scroll',()=>{
     console.log(window.pageYOffset)
-    if(window.pageYOffset > navbar.offsetTop+120){
+    if(window.pageYOffset > navbar.offsetTop+50){
         navbar.classList.remove('position-absolute')
         navbar.classList.remove('bg-transparent')
         navbar.classList.remove('navbar-transparent')

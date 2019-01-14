@@ -1,8 +1,9 @@
 body{
     box-sizing: border-box;
     /* padding: 3rem 2rem; */
-    background: #f1f1f1;
+    background: #fffcfc;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 *::selection{
     background: #f9020a;
@@ -92,6 +93,9 @@ body{
    
 }
 /* header */
+.wrapper{
+    padding: 5rem;
+}
 .jum-header{
     border-radius: 15px;
     height: 100vh;
@@ -103,27 +107,95 @@ body{
 .jum-header .container{
     
 }
+.background{
+    background: rgba(0, 0, 0, 0.986);
+    overflow: hidden;
+    padding: 1rem .5rem;
+    -webkit-box-shadow: 12px 13px 0px 1px white;
+-moz-box-shadow: 12px 13px 0px 1px white;
+box-shadow: 12px 13px 0px 1px white;
+}
+
+
 .navbar{
-    transition: .3s ease-in-out !important;
+    transition: .1s ease !important;
     top:0;
     left: 0;
     width: 100%;
+    
+}
+.nav-link{
+    font-size: .9rem;
+    font-weight:bolder;
+    letter-spacing:1px;
+    background: transparent !important;
 
 }
+.nav-list-header{
+    background:rgba(0, 0, 0, 0);
+    list-style: none;
+}
+.nav-item{
+    background: transparent !important;
+}
 .bg-nb-black{
-    background: rgb(0, 0, 0) !important;
+    background: #000000ea !important;
+}
+.logo{
+    width: 250px;
+}
+.title-header{
+    font-size: 6rem;
+    letter-spacing: 2px;
+    font-family: 'Staatliches', cursive;
+}
+.subtitle-header{
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 990px){
     body{
         
     }
+    .wrapper{
+        padding: 3rem;
+    }
     .title-header{
         font-size: 2rem;
     }
-    .nav{
-        background: rgba(0, 0, 0);
+    .subtitle-header{
+        font-size: 1.5rem;
     }
+
+    .navbar{
+        border-bottom: 3px solid white;
+    }
+    .nav-item{
+        width: 100%;
+       
+    }
+    .nav-list-header{
+        background: #000000ea !important;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        
+    }
+  
+    .wrapper{
+        padding: 1rem;
+    }
+    .title-header{
+        font-size: 1.5rem;
+    }
+    .subtitle-header{
+        font-size: .8rem;
+    }
+    .logo{
+        width: 150px;
+    }
+
     .navbar{
         border-bottom: 3px solid white;
     }
@@ -151,6 +223,7 @@ body{
 
 .img-profile{
     width: 250px !important;
+    height: 250px !important;
 }
 .about-me-item{
     font-size: 1.2rem;
@@ -168,7 +241,7 @@ body{
     width: 15px;
     height: 15px;
     border-radius: 100%;
-    background-color: #ffffff;
+    background-color: #050505;
 }
 .about-me-item::before{
     content: '';
@@ -178,5 +251,28 @@ body{
     width: 2px;
     height: 100%;
     border-radius: 18px;
-    background-color: #ffffff;
+    background-color: #000000;
+}
+
+/* proyects section */
+.card{
+    min-width: 350px;
+    min-height: 350px;
+    background-color: transparent !important;
+}
+.card-img-top{
+    border-bottom-left-radius: calc(2.25rem - 1px);
+    border-bottom-right-radius: calc(2.25rem - 1px);
+    border-top-left-radius: calc(2.25rem - 1px);
+    border-top-right-radius: calc(2.25rem - 1px);
+    object-fit: cover;
+    min-width: 350px;
+    min-height: 350px;
+}
+
+@media screen and (max-width:1000px){
+    
+    .nav-proyects-item{
+        width: 100px;
+    }
 }
