@@ -1,0 +1,120 @@
+@import './header.css';
+@import './about-me.css';
+@import './contact';
+
+body{
+    box-sizing: border-box;
+    /* padding: 3rem 2rem; */
+    background: #fffcfc;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+}
+*::selection{
+    background:#5bc0be !important;
+    color: black !important;
+}
+
+
+/* preloader */
+.preloader-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f1f1f1;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-items{
+    display: flex;
+    justify-content: space-between;
+    list-style: none !important;
+    position: absolute;
+
+    padding: 0;
+    margin:0;
+}
+.preloader-item{
+    height: 15px;
+    width: 15px;
+    background: red;
+    transition: .3s ease-in-out;
+}
+.item-1{
+    animation: upAndDown 2.5s infinite;
+    background: #f9020a;
+}
+.item-2{
+    
+    animation: upAndDown 2.5s infinite;
+    animation-delay: .1s;
+    background: #ff282f;
+}
+.item-3{
+   
+    animation: upAndDown 2.5s infinite;
+    animation-delay: .2s;
+    background: #ff656a;
+}
+.item-4{
+   
+    animation: upAndDown 2.5s infinite;
+    animation-delay: .3s;
+    background: #ff8387;
+}
+
+@keyframes upAndDown{
+    
+    10%{
+        transform: translateY(-500%);
+    }
+    20%{
+        transform: translateY(250%);
+    }
+    23%{
+        transform: translateY(255%);
+    }
+    26%{
+        transform: translateY(260%);
+    }
+    29%{
+        transform: translateY(265%);
+    }
+    99%{
+        transform: translateY(0%);
+    }
+   
+}
+/* header */
+
+/* header/ */
+
+/* aboute me section */
+
+/* proyects section */
+.card{
+    min-width: 350px;
+    min-height: 350px;
+    background-color: transparent !important;
+}
+.card-img-top{
+    border-bottom-left-radius: calc(2.25rem - 1px);
+    border-bottom-right-radius: calc(2.25rem - 1px);
+    border-top-left-radius: calc(2.25rem - 1px);
+    border-top-right-radius: calc(2.25rem - 1px);
+    object-fit: cover;
+    min-width: 350px;
+    min-height: 350px;
+}
+
+@media screen and (max-width:1000px){
+    
+    .nav-proyects-item{
+        width: 100px;
+    }
+}

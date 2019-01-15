@@ -1,6 +1,6 @@
 window.onload = ()=>{
     preloader.style.display='none'
-    
+    document.body.style.overflowY='scroll '
 }
 const navbar = document.querySelector('.navbar')
 console.log(navbar.offsetTop)

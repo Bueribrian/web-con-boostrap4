@@ -1,0 +1,140 @@
+.wrapper{
+    padding: 2rem;
+}
+.jum-header{
+    border-radius: 15px;
+    height: 100vh;
+    padding: 0;
+    background-color: #1c2541;
+    background-size: cover;
+    overflow: hidden;
+}
+.jum-header .container{
+    
+}
+.background{
+    background: rgba(0, 0, 0, 0.986);
+    overflow: hidden;
+    padding: 1rem .5rem;
+    -webkit-box-shadow: 12px 13px 0px 1px white;
+    -moz-box-shadow: 12px 13px 0px 1px white;
+    box-shadow: 12px 13px 0px 1px white;
+}
+.navbar-item-link:hover{
+    color: white !important;
+    transition: .2s all;
+}
+
+.navbar{
+    top:0;
+    left: 0;
+    width: 100%;
+    font-family: 'Domine', serif !important;
+}
+.nav-link{
+    color: #ffffff !important;
+    font-size:.9rem;
+    font-weight:bolder;
+    letter-spacing:1px;
+    background: transparent !important;
+}
+.nav-list-header{
+    background: #03030300 !important;
+    list-style: none;
+}
+.nav-item{
+    background: transparent !important;
+}
+.bg-nb-black{
+    background: #0b132b !important;
+}
+.logo{
+    width: 250px;
+}
+.title-header{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-family: 'Domine', serif !important;
+}
+.subtitle-header{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.color-smoke{
+    color: #3a506b !important;
+}
+.bg-smoke{
+    background: #3a506b !important;
+}
+.bg-cyan{
+    background: #5bc0be !important;
+}
+.border-cyan{
+    border-color: #5bc0be;
+}
+.color-cyan{
+    color: #5bc0be !important;
+}
+.border-smoke{
+    border-color: #3a506b !important;
+}
+.font-sans{
+    font-family: 'Open Sans', sans-serif;
+}
+.font-domine{
+    font-family: 'Domine', serif !important;
+}
+
+.btn-cv:hover{
+    background: #5bc0be !important;
+    color: #ffffff !important;
+    border-color: #5bc0be !important;
+
+}
+@media screen and (max-width: 990px){
+    body{
+        
+    }
+    .wrapper{
+        padding: 3rem;
+    }
+    .title-header{
+        font-size: 2rem;
+    }
+    .subtitle-header{
+        font-size: 1.5rem;
+    }
+
+    .navbar{
+        border-bottom: 3px solid white;
+    }
+    .nav-item{
+        width: 100%;
+       
+    }
+    .nav-list-header{
+        background:#0b132b !important;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        
+    }
+  
+    .wrapper{
+        padding: 1rem;
+    }
+    .title-header{
+        font-size: 1.5rem;
+    }
+    .subtitle-header{
+        font-size: .8rem;
+    }
+    .logo{
+        width: 150px;
+    }
+
+    .navbar{
+        border-bottom: 3px solid white;
+    }
+}

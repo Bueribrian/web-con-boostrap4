@@ -1,0 +1,58 @@
+
+.skill-icon{
+    font-size: 6rem;
+
+}
+.social-icon{
+    font-size: 3rem;
+}
+.linear-block{
+    height:250px;
+    background-color: #0b132b;
+}
+
+.img-profile{
+    width: 250px !important;
+    height: 250px !important;
+}
+.about-me-item{
+    font-size: 1.2rem;
+    font-weight: thin;
+    min-height: 150px;
+    list-style: none;
+    position: relative;
+    
+}
+.about-me-item::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #3a506b;
+}
+.about-me-item::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 100%;
+    border-radius: 18px;
+    background-color: #3a506b;
+}
+
+@media screen and (max-width: 767px){
+
+    .social-media-list{
+        flex-direction: row !important;
+        justify-content: center !important;
+    }
+    .about-name,.about-email{
+        padding: 1rem 0;
+        background:#1c2541 !important ; 
+    }
+    
+}
