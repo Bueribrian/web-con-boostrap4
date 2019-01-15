@@ -47,25 +47,25 @@ body{
 }
 .item-1{
     animation: upAndDown 2.5s infinite;
-    background: #f9020a;
+    background: #0b132b;
 }
 .item-2{
     
     animation: upAndDown 2.5s infinite;
     animation-delay: .1s;
-    background: #ff282f;
+    background: #14234e;
 }
 .item-3{
    
     animation: upAndDown 2.5s infinite;
     animation-delay: .2s;
-    background: #ff656a;
+    background: #243d8a;
 }
 .item-4{
    
     animation: upAndDown 2.5s infinite;
     animation-delay: .3s;
-    background: #ff8387;
+    background: #375dcf;
 }
 
 @keyframes upAndDown{
