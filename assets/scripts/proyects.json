@@ -1,0 +1,68 @@
+[
+    {
+        "title":"Paneles flex",
+        "desc":"Una pequeña practica con flexbox en la cual si se hace click en un panel este se expande.",
+        "link":"https://flex-panels.netlify.com/",
+        "img":"./assets/images/shouty.png",
+        "tag":"css"
+    },{
+        "title":"Variables css",
+        "desc":"Practica de manejo de variables css por medio de javascript",
+        "link":"https://css-variable.netlify.com",
+        "img":"./assets/images/shouty.png",
+        "tag":"js"
+    },{
+        "title":"Template HTML",
+        "desc":"Template hecho desde cero con puro html y css.",
+        "link":"https://coffestore.netlify.com/",
+        "img":"./assets/images/shouty.png",
+        "tag":"html"
+    },{
+        "title":"Reloj javascript",
+        "desc":"Reloj hecho con un script con el objeto Date",
+        "link":"https://clocky.netlify.com",
+        "img":"./assets/images/shouty.png",
+        "tag":"js"
+    },{
+        "title":"Bateria musical",
+        "desc":"Bateria musical hecha con javascript",
+        "link":"https://bateriajs.netlify.com",
+        "img":"./assets/images/shouty.png",
+        "tag":"js"
+    },
+    {
+        "title":"Teclea rapido!",
+        "desc":"Aplicacion para observar la velocidad con la que tecleas.",
+        "link":"https://type-fast.netlify.com",
+        "img":"./assets/images/shouty.png",
+        "tag":"js"
+    },
+    {
+        "title":"Template HTML 2",
+        "desc":"Template hecho desde cero con puro html y css.",
+        "link":"https://rektweb.netlify.com",
+        "img":"./assets/images/shouty.png",
+        "tag":"html"
+    },
+    {
+        "title":"Primero aplicacion con React",
+        "desc":"Esta es mi primero aplicacion con react",
+        "link":"https://buerireact1.herokuapp.com",
+        "img":"./assets/images/shouty.png",
+        "tag":"react"
+    },
+    {
+        "title":"Portfolio de fotografia",
+        "desc":"Portfolio de fotografia con login y registro, para subida de imagenes de forma dinamica <p class='text-muter'> Heroku no permite subida de imagenes por mas de 24 horas.</p>",
+        "link":"https://portfolio-nadia.herokuapp.com/",
+        "img":"./assets/images/shouty.png",
+        "tag":"node"
+    },
+    {
+        "title":"Red social",
+        "desc":"pequeña red social hecha con Node.js - express, con mongodb y handlebars.<p class='text-muter'> Heroku no permite subida de imagenes por mas de 24 horas.</p>",
+        "link":"https://shoutyfast-v01.herokuapp.com/",
+        "img":"./assets/images/shouty.png",
+        "tag":"node"
+    }
+]

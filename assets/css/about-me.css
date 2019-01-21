@@ -43,6 +43,9 @@
     border-radius: 18px;
     background-color: #3a506b;
 }
+.nav-proyects-link{
+    cursor: pointer;
+}
 
 @media screen and (max-width: 767px){
 
