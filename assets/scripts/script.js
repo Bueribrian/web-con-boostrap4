@@ -1,6 +1,9 @@
 window.onload = ()=>{
-    preloader.style.display='none'
-    document.body.style.overflowY='scroll'
+    setTimeout(function(){preloader.style.display='none'
+    document.body.style.overflowY='scroll'}
+    ,2000)
+    
+    fetchItems('todos')
 }
 
 
@@ -30,14 +33,15 @@ window.addEventListener('scroll',()=>{
 //  /NAVBAR
 
 // Proyects 
+
 // Generador de template
 let printHtml = function(data){
     let proyectsContainer = document.querySelector('#proyects-container')
     proyectsContainer.innerHTML=''
     data.map( item =>{
         let template = `
-        <div data-aos='fade-in' class="card my-4 mx-2 border-0" style="width: 15rem;">
-            <img src="${item.img}" class="card-img-top " alt="...">
+        <div data-aos="flip-right" class="card my-4 mx-2 border-0" style="width: 15rem;">
+            <img src="${item.img}" class="card-img-top shadow-sm border" alt="...">
             <div class="card-body text-center">
                 <h3 class="card-text font-domine font-weight-bold text-dark">${item.title}</h3>
                 <p class="card-text text-muted font-sans">${item.desc}</p>
@@ -55,16 +59,22 @@ let printHtml = function(data){
 
 // funcion para traer los items del proyects.json
 
-let fetchItems = function(tag){
+let fetchItems = function(tag='todos'){
     fetch('./assets/scripts/proyects.json')
             .then(response =>{ 
                 return response.json()
             })
             .then(data =>{ 
-                const result = data.filter(item => item.tag === tag);
-                printHtml(result)
+                if(tag === 'todos'){
+                    console.log('llegue')
+                    console.log(data)
+                    printHtml(data)
+                }else{
+                    const result = data.filter(item => item.tag === tag);
+                    printHtml(result)
+                }
+                
             })
-
 }
 
 // recorro los items del navbar de proyectos
@@ -75,7 +85,7 @@ navProyectsItems.forEach((navItem, index) =>{
         navProyectsItems.map(item => item.classList.remove('checkItem'))
         // agrego la clase checked solo al item clickeado
         navItem.classList.add('checkItem')
-        
+        // llamo a la funcion para traer los items del proyects.json
         fetchItems(navItem.dataset.tag)
     })
 } )
