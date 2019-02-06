@@ -9,9 +9,7 @@
     background-size: cover;
     overflow: hidden;
 }
-.jum-header .container{
-    
-}
+
 .background{
     background: rgba(0, 0, 0, 0.986);
     overflow: hidden;
@@ -92,9 +90,7 @@
 
 }
 @media screen and (max-width: 990px){
-    body{
-        
-    }
+    
     .wrapper{
         padding: 3rem;
     }
@@ -117,9 +113,7 @@
     }
 }
 @media screen and (max-width: 480px){
-    body{
-        
-    }
+    
   
     .wrapper{
         padding: 1rem;

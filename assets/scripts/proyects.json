@@ -7,13 +7,6 @@
         "tag":"html"
     },
     {
-        "title":"Bateria musical",
-        "desc":"Bateria musical hecha con javascript",
-        "link":"https://bateriajs.netlify.com",
-        "img":"./assets/images/battery.png",
-        "tag":"js"
-    },
-    {
         "title":"Teclea rapido!",
         "desc":"Aplicacion para observar la velocidad con la que tecleas.",
         "link":"https://type-fast.netlify.com",
