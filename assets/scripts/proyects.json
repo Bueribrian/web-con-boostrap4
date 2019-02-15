@@ -40,5 +40,13 @@
         "link":"https://shoutyfast-v01.herokuapp.com/",
         "img":"./assets/images/shouty.png",
         "tag":"node"
+    },
+    {
+        "title":"Rick And Morty App",
+        "desc":"Pequeña aplicacion de practica hecha con React.js que hace llamados a la API de Rick and Morty",
+        "link":"https://rick-morty.netlify.com",
+        "img":"./assets/images/ram.png",
+        "tag":"react"
     }
+
 ]
