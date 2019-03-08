@@ -47,6 +47,13 @@
         "link":"https://rick-morty.netlify.com",
         "img":"./assets/images/ram.png",
         "tag":"react"
+    },
+    {
+        "title":"React chat app",
+        "desc":"Chat con chatkit y react.",
+        "link":"https://react-chat-bbp1.netlify.com/",
+        "img":"./assets/images/react-chat.png",
+        "tag":"react"
     }
 
 ]
